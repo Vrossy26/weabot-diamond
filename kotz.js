@@ -13,7 +13,7 @@ const { getBuffer } = require("./lib/functions")
 const { print } = require("./utils/col")
 const { captcha, sticker, tiktok, yt, xnxx } = require("./plugins")
 const lang = require("./languages")
-const menu = require("./Diamond")
+const menz = require("./Diamond")
 const dm = require("./Diamond/inidm")
 const fm = require("./Diamond/Iniformat")
 const pay = require("./Diamond/Inipay")
@@ -22,13 +22,14 @@ const settings = JSON.parse(read("./src/settings.json"))
 
 moment.tz.setDefault('Asia/Jakarta').locale("id")
 let bhs = settings.lang
+let men = setting.menu
 let prefix = settings.prefix
 
 module.exports = msgHndlr = async (kotz, mek) => {
     try {
         const { from, sender, pushname, body, quoted, timestamp, type, isGroup, isMedia, id, fromMe, getMedia, mentions } = mek
         const help = new lang[bhs](prefix)
-        const menudm = new menu["menu"](prefix)
+        const menudm = new menz[men](prefix)
         const anteicodes = new anteiku(settings.anteikey) // signup to antei.codes if you want to get token/apikey
         const cmd = body && body.startsWith(prefix) ? body.slice(prefix.length).trim().split(/ +/).shift().toLowerCase() : ""
         const isCmd = body && body.startsWith(prefix) ? true : false
