@@ -4,6 +4,7 @@
     ],
     "prefix": "#",
     "lang": "ind",
+    "menu": "menu",
     "anteikey": "set apikey on here",
     "ogatakey": "set apikey on here"
 }
