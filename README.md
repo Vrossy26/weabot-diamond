@@ -12,8 +12,9 @@
 ```
 
 ### Configuration
-* Set configuration on [this](https://github.com/MhankBarBar/weabot/blob/master/src/settings.json) file
+* Set configuration on [this](https://github.com/Kotzyy/weabot-diamond/blob/master/src/settings.json) file
 * Get anteikey from [this](https://antei.codes) site
+* Get ogatakey from [this](https://anesmlbb.studio/) site
 ```json
 {
     "owner": [
