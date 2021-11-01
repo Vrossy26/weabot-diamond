@@ -22,7 +22,7 @@ const settings = JSON.parse(read("./src/settings.json"))
 
 moment.tz.setDefault('Asia/Jakarta').locale("id")
 let bhs = settings.lang
-let men = setting.menu
+let men = settings.menu
 let prefix = settings.prefix
 
 module.exports = msgHndlr = async (kotz, mek) => {
