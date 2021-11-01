@@ -29,7 +29,7 @@ module.exports = msgHndlr = async (kotz, mek) => {
     try {
         const { from, sender, pushname, body, quoted, timestamp, type, isGroup, isMedia, id, fromMe, getMedia, mentions } = mek
         const help = new lang[bhs](prefix)
-        const menudm = new menz.men
+        const menudm = new menz(settings.menu)
         const anteicodes = new anteiku(settings.anteikey) // signup to antei.codes if you want to get token/apikey
         const cmd = body && body.startsWith(prefix) ? body.slice(prefix.length).trim().split(/ +/).shift().toLowerCase() : ""
         const isCmd = body && body.startsWith(prefix) ? true : false
