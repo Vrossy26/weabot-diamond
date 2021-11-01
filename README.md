@@ -1,6 +1,6 @@
 ### Clone this repository
 ```bash
-> git clone https://github.com/MhankBarBar/weabot
+> git clone https://github.com/Kotzyy/weabot-diamond
 > cd weabot
 ```
 
