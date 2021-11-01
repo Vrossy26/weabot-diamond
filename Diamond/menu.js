@@ -40,3 +40,5 @@ Ini Menu Yang Tersedia
         ]
     }
 }
+
+module.exports = menu
