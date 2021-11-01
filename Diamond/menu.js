@@ -4,6 +4,14 @@
 // Gausah Di Jual Asu
 
 class menu {
+  
+      /**
+     * @param {String} prefix
+    **/
+    constructor(prefix) {
+        if (!prefix) throw new Error("Unknown prefix : set prefix first")
+        this.prefix = prefix
+    }
   help(pushname) {
         return `Halo ${pushname}
 Ini Menu Yang Tersedia
